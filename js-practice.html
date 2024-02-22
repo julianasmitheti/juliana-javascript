@@ -79,16 +79,18 @@
     return fullNamed;
    }
 
-   let try04 = makeName(firstname = 'Juliana', middleName = 'Meow', lastName = 'Smith-Etienne');
-   console.log(try04);
+   console.log('Juliana', 'Meow', 'Smith-Etienne');
+   console.log('Robert', '"Beto"', 'O\'\Rourke');
+   console.log('Moop', 'Meep', 'Merp');
 
-   let try05 = makeName(firstname = 'Gerardo', middleName = 'Javier', lastName = 'Smith-Salinas');
-   console.log(try05);
-
-   let try06 = makeName(firstName = 'Robert', middleName = '"Beto"', lastName = 'O\'\Rourke');
-   console.log(try06);
-
+   console.log('Making a better name function');
    
+   function makeBetterName(firstName, middleName, lastName) {
+    let fullName = firstName + ' ' + middleName + ' ' + lastName;
+    return fullName;
+   }
+
+
   </script>
 </body>
 </html>
